@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlaskCam</title>
+
+    <h1>Marks checker page</h1>
+</head>
+<body>
+    <h2>Enter marks below</h2>
+
+    <form action="/submit" method='post'>
+        <!--action above should point to the app.route value to be called-->
+        <label for="Science">Science:</label>
+        <input type="text" id="science" name="science_n" value="0"><br>
+        <label for="Maths">Maths:</label>
+        <input type="text" id="Maths" name="maths_n" value="0"><br>
+        <label for="C">C:</label>
+        <input type="text" id="C" name="c_n" value="0"><br>
+        <label for="Datascience">datascience:</label>
+        <input type="text" id="datascience" name="datascience_n" value="0"><br>
+        <input type="submit" value="Submit">
+    
+    </form>
+</body>
+</html>
