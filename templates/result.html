@@ -9,5 +9,15 @@
 <body>
     <h2> The final result is {{ final_res }}</h2>
     <!--The above variable is coming from /submit app.route()-->
+
+    <h3>Below will be jinja2 template conditions</h3>
+    {% if mks>=50 %}
+    <h1>You have passed!</h1>
+    {% else %}
+    <h1>You have failed!</h1>
+    {% endif %}
+
+    {# This comment will not be visible on the page #}
+
 </body>
 </html>

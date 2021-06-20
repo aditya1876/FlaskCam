@@ -1,7 +1,10 @@
 '''
 Version 2 covers
 - render html templates
-- jinja2 templating
+- jinja2 templating:
+    - {{ variable }} -- to display expressions or variables
+    - {% code %} -- if, for loop
+    - {# comments #} -- this is for comments
 '''
 
 from flask import Flask, redirect, url_for, render_template, request
@@ -39,8 +42,8 @@ def submit():
     else:
         result = "FAIL"
 
-    return render_template('result.html', final_res=result)
-    # 'final_result' should be in the result.html as varialble so that it can show the value of 'result' variable from here.
+    return render_template('result.html', final_res=result, mks=avgtotalmarks)
+    # 'final_result' and 'mks' should be in the result.html as varialble so that it can show the value of 'result' and avgtotalmarks variable from here.
 
 
 if __name__ == "__main__":
