@@ -7,6 +7,14 @@
     <title>FlaskCam</title>
 
     <h1>Marks checker page</h1>
+
+    <!--inserting css externally-->
+    <link rel="stylesheet" href="{{ ulr_for('static', filename='css/style.css') }}">
+
+    <!--calling javascript stored externally-->
+    <script rel="text/javascript" src="{{ url_for('script', filename='script/script.js') }}"> </script>
+
+    
 </head>
 <body>
     <h2>Enter marks below</h2>
